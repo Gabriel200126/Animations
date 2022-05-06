@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <!-- head-->
+  <head>
+    <title>Travelling</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelling</title>
+    <link rel="stylesheet" href="travelling.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <div
+      class="w3-sidebar w3-bar-block w3-card w3-animate-left"
+      style="display: none"
+      id="mySidebar"
+    >
+      <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">
+        Close &times;
+      </button>
+      <a href="#" class="w3-bar-item w3-button">home</a>
+      <a href="#" class="w3-bar-item w3-button">about</a>
+      <a href="#" class="w3-bar-item w3-button" onclick="indonesia()"
+        >contanct us</a
+      >
+    </div>
+    <h1
+      id="px"
+      mstyle="position: fixed;margin-left: 40%;justify-content: center;color: white;"
+    ></h1>
+
+    <!-- first visul -->
+    <div class="airplaneBackground">
+      <img
+        src="Airplane-Transparent-Background.png"
+        id="imgIndo"
+        alt="Car"
+        style="
+          justify-content: center;
+          align-items: center;
+          margin-left: 25%;
+          margin-top: 5%;
+          margin-bottom: 5%;
+        "
+      />
+      <img src="helicopters-88667.png" alt="" id="helicopter" />
+      <img
+        src="PikPng.com_clouds-background-png_1272113.png"
+        alt=""
+        id="trees"
+      />
+      <img
+        src="PikPng.com_clouds-background-png_1272113.png"
+        alt=""
+        id="trees2"
+      />
+    </div>
+    <!-- open nav -->
+    <div id="main">
+      <div class="w3-teal" style="position: sticky; top: 0%; padding: 0%">
+        <button
+          id="openNav"
+          class="w3-button w3-teal w3-xlarge"
+          onclick="w3_open()"
+        >
+          &#9776;
+        </button>
+      </div>
+
+      <!-- cards with destination -->
+      <!-- first card -->
+      <div class="all-cards">
+        <div id="goals">
+          <h1 id="title-goals">our tourist destination</h1>
+          <div class="container-product">
+            <button class="left">'<'</button>
+            <div class="card-p">
+              <div class="img-product1 img-product"></div>
+              <p>Starting from 50$</p>
+              <div id="box-indonesia">hey</div>
+              <div
+                class="card-txt"
+                style="cursor: pointer"
+                onmouseover="mouse()"
+              >
+                Indonesia
+              </div>
+
+              <details>
+                <summary
+                  style="color: black; width: 20rem"
+                  id="more"
+                  onclick="moreClick('more')"
+                >
+                  more information
+                </summary>
+                <div class="card-indonesia">
+                  <img src="indonesia.jpeg" alt="" class="img-indonesia-" />
+                  <p>
+                    Indonesia (/ˌɪndəˈniːʒə/ (listen) IN-də-NEE-zhə), officially
+                    the Republic of Indonesia,[a] is a country in Southeast Asia
+                    and Oceania between the Indian and Pacific oceans. It
+                    consists of over 17,000 islands, including Sumatra, Java,
+                    Sulawesi, and parts of Borneo and New Guinea. Indonesia is
+                    the world's largest island country and the 14th-largest
+                    country by area, at 1,904,569 square kilometres (735,358
+                    square miles). With about 270 million people, Indonesia is
+                    the world's fourth-most populous country and the most
+                    populous Muslim-majority country. Java, the world's most
+                    populous island, is home to more than half of the country's
+                    population. Indonesia is a presidential republic with an
+                    elected legislature. It has 34 provinces, of which five have
+                    special status. The country's capital, Jakarta, is the
+                    world's second-most populous urban area. Indonesia shares
+                    land borders with Papua New Guinea, East Timor, and the
+                    eastern part of Malaysia, as well as maritime borders with
+                    Singapore, Vietnam, Thailand, the Philippines, Australia,
+                    Palau, and India (Andaman and Nicobar Islands). Despite its
+                    large population and densely populated regions, Indonesia
+                    has vast areas of wilderness that support one of the world's
+                    highest levels of biodiversity. The Indonesian archipelago
+                    has been a valuable region for trade since at least the 7th
+                    century when Srivijaya and later Majapahit traded with
+                    entities from mainland China and the Indian subcontinent.
+                    Local rulers gradually absorbed foreign influences from the
+                    early centuries, and Hindu and Buddhist kingdoms flourished.
+                    Sunni traders and Sufi scholars brought Islam, while
+                    Christianity was brought mostly through European
+                    missionaries. Although sometimes interrupted by the
+                    Portuguese and the French and British, the Dutch were the
+                    foremost colonial power for much of their 350-year presence
+                    in the archipelago. The concept of "Indonesia" as a
+                    nation-state emerged in the early 20th century, culminating
+                    later in the proclamation of Indonesian Independence in
+                    1945. However, it was not until 1949 that the Dutch
+                    recognised Indonesia's sovereignty following an armed and
+                    diplomatic conflict between the two. Indonesia consists of
+                    hundreds of distinct native ethnic and linguistic groups,
+                    with Javanese being the largest. A shared identity has
+                    developed with the motto "Bhinneka Tunggal Ika" ("Unity in
+                    Diversity" literally, "many, yet one"), defined by a
+                    national language, ethnic diversity, religious pluralism
+                    within a Muslim-majority population, and a history of
+                    colonialism and rebellion against it. The economy of
+                    Indonesia is the world's 16th-largest by nominal GDP and the
+                    7th-largest by PPP. It is a regional power and is considered
+                    a middle power in global affairs. The country is a member of
+                    several multilateral organisations, including the United
+                    Nations, World Trade Organization, G20, and a founding
+                    member of the Non-Aligned Movement, Association of Southeast
+                    Asian Nations, East Asia Summit, and the Organisation of
+                    Islamic Cooperation.
+                  </p>
+                </div>
+              </details>
+            </div>
+
+            <!-- second card -->
+            <div class="card-p3">
+              <img
+                src="Samurai-Transparent.png"
+                alt=""
+                style="width: 5rem"
+                class="imgSolider"
+              />
+              <div class="img-product2 img-product"></div>
+              <p>120$</p>
+              <div class="card-txt">Japan</div>
+            </div>
+            <!-- third card -->
+            <div class="card-p5">
+              <img
+                src="Halo-Wars-Characters.png"
+                alt=""
+                style="width: 5rem"
+                class="imgSolider"
+              />
+              <div class="img-product3 img-product"></div>
+              <p>120$</p>
+              <div class="card-txt">Holliwood</div>
+            </div>
+            <!-- fourth card -->
+            <div class="card-p7">
+              <img
+                src="klipartz.com.png"
+                alt=""
+                style="width: 5rem"
+                class="imgSolider"
+              />
+              <div class="img-product4 img-product"></div>
+              <p>120$</p>
+              <div class="card-txt">Rome</div>
+            </div>
+
+            <button class="right">'>'</button>
+          </div>
+          <!-- fifth card -->
+          <div class="container-product">
+            <button class="left">'<'</button>
+            <div class="card-p9">
+              <div class="img-product5 img-product"></div>
+              <p>120$</p>
+              <div class="card-txt">Romania</div>
+            </div>
+            <!-- sixth card -->
+            <div class="card-p10">
+              <div class="img-product6 img-product"></div>
+              <p>120$</p>
+              <div class="card-txt">paris</div>
+            </div>
+            <!-- seventh card -->
+            <div class="card-p11">
+              <div class="img-product7 img-product"></div>
+              <p>120$</p>
+              <div class="card-txt">barcelona</div>
+            </div>
+            <!-- eighth card -->
+            <div class="card-p12">
+              <div class="img-product8 img-product"></div>
+              <p>120$</p>
+              <div class="card-txt">Hawaii</div>
+            </div>
+
+            <button class="right">'>'</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="support" style="text-align: center; box-sizing: border-box">
+        <h1>number of support</h1>
+        <p class="number-supports" style="font-size: 5rem">1</p>
+        <button class="button-suppots" onclick="buttonSupp()">
+          support us
+        </button>
+      </div>
+
+      <!-- contacts -->
+    </div>
+    <div class="contacts-2">
+      <section class="wrapper">
+        <div class="icon facebook">
+          <img src="facebook.png" class="icon facebook" alt="" />
+          <div class="tooltip">Facebook</div>
+          <span><i class="fab fa-facebook-f"></i></span>
+        </div>
+
+        <div class="icon twitter">
+          <img src="twitter.png" class="icon facebook" alt="" />
+          <div class="tooltip">Twitter</div>
+          <span><i class="fab fa-twitter"></i></span>
+        </div>
+
+        <div class="icon instagram">
+          <div class="tooltip">instagram</div>
+          <img src="insta.png" class="icon facebook" alt="" />
+          <span><i class="fab fa-instagram"></i></span>
+        </div>
+
+        <div class="icon github">
+          <div class="tooltip">Github</div>
+          <img src="git.jpg" class="icon facebook" alt="" />
+          <span><i class="fab fa-github"></i></span>
+        </div>
+
+        <div class="icon youtube">
+          <div class="tooltip">Youtube</div>
+          <img src="yt.png" class="icon facebook" alt="" />
+          <span><i class="fab fa-youtube"></i></span>
+        </div>
+      </section>
+    </div>
+
+    <script src="travelling.js"></script>
+  </body>
+</html>

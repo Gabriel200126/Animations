@@ -1,0 +1,697 @@
+* {
+  cursor: grabbing;
+}
+
+.air {
+  height: 70vh;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+}
+#background-title {
+  height: 50vh;
+  width: 50%;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  margin-left: 25%;
+}
+
+#title-h1 {
+  text-align: center;
+  padding-top: 10rem;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+  font-size: 3rem;
+}
+
+nav {
+  flex: 1;
+  padding-left: 60px;
+  text-align: center;
+  position: sticky;
+  top: 0px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 50px 110px;
+  text-shadow: 5px 5px 5px black;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+#goals {
+  text-align: center;
+  margin: 20vh auto 20vh auto;
+}
+
+#goals #title-goals {
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);
+  font-weight: 300;
+}
+
+.title-goals-keyframes{
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);
+  font-weight: 300;
+  display: inline-block;
+  border-radius: 10%;
+  font-size: 5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgba(32, 178, 171, 0.784);
+  animation: title-goals 5s;
+}
+
+@keyframes title-goals {
+  0% {
+    background-color: white;
+    opacity: 0;
+    transform: translateX(70%); 
+  }
+  
+}
+
+.container-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: container;
+  animation-duration: 5s;
+  
+}
+
+.container-product-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: container;
+  animation-duration: 5s;
+  
+}
+
+@keyframes container {
+  0%{
+    opacity: 0;
+    transform: translateY(20%);
+  }
+}
+
+
+.card-p, .card-p9 {
+  box-shadow: 5px 5px 5px rgb(66, 200, 253);
+  border-radius: 20%;
+  background: #fff;
+  color: #0000;
+  margin: 20px;
+  width: 20vw;
+  cursor: pointer;
+  animation-name: scrollAnimation;
+  animation-duration: 2s;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(90%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.card-p2 {
+  box-shadow: 5px 5px 5px rgb(66, 200, 253);
+  border-radius: 20%;
+  background: #fff;
+  color: #0000;
+  margin: 20px;
+  width: 20vw;
+  cursor: pointer;
+  animation-name: scrollAnimation2;
+  animation-duration: 4s;
+}
+
+@media (max-width: 1200px) {
+  .card-p2{
+    min-width: 90%;
+  }
+}
+
+@keyframes scrollAnimation2 {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.card-p3, .card-p10 {
+  box-shadow: 5px 5px 5px rgb(66, 200, 253);
+  border-radius: 20%;
+  background: #fff;
+  color: #0000;
+  margin: 20px;
+  width: 20vw;
+  cursor: pointer;
+  
+}
+
+.card-p4 {
+  box-shadow: 5px 5px 5px rgb(66, 200, 253);
+  border-radius: 20%;
+  background: #fff;
+  color: #0000;
+  margin: 20px;
+  width: 20vw;
+  cursor: pointer;
+  animation-name: scrollAnimation4;
+  animation-duration: 5s;
+}
+
+
+
+@media (max-width: 1200px) {
+  .card-p4{
+    min-width: 90%;
+  }
+}
+
+@keyframes scrollAnimation4 {
+  0% {
+    opacity: 0;
+    transform: translateY(90%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.card-p5, .card-p11{
+  box-shadow: 5px 5px 5px rgb(66, 200, 253);
+  border-radius: 20%;
+  background: #fff;
+  color: #0000;
+  margin: 20px;
+  width: 20vw;
+  cursor: pointer;
+}
+
+.card-p6{
+  box-shadow: 5px 5px 5px rgb(66, 200, 253);
+  border-radius: 20%;
+  background: #fff;
+  color: #0000;
+  margin: 20px;
+  width: 20vw;
+  cursor: pointer;
+  animation-name: scrollAnimation5;
+  animation-duration: 6s;
+}
+
+@media (max-width: 1200px) {
+  .card-p6{
+    min-width: 90%;
+  }
+}
+
+@keyframes scrollAnimation5 {
+  0% {
+    opacity: 0;
+    transform: translateY(90%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.card-p7, .card-p12{
+  box-shadow: 5px 5px 5px rgb(66, 200, 253);
+  border-radius: 20%;
+  background: #fff;
+  color: #0000;
+  margin: 20px;
+  width: 20vw;
+  cursor: pointer;
+}
+
+.card-p8{
+  box-shadow: 5px 5px 5px rgb(66, 200, 253);
+  border-radius: 20%;
+  background: #fff;
+  color: #0000;
+  margin: 20px;
+  width: 20vw;
+  cursor: pointer;
+  animation-name: scrollAnimation6;
+  animation-duration: 7s;
+}
+
+@media (max-width: 1200px) {
+  .card-p8{
+    min-width: 90%;
+  }
+}
+
+@keyframes scrollAnimation6 {
+  0% {
+    opacity: 0;
+    transform: translateY(90%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+
+
+
+
+
+
+
+.img-product {
+  border-radius: 20%;
+  height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.img-product1 {
+  background-image: url(indonesia.jpeg);
+}
+
+.img-product2 {
+  background-image: url(japan.jpeg);
+  
+}
+
+.img-product3 {
+ 
+  background-image: url(losAngeles.jpeg);
+}
+
+.img-product4 {
+
+  background-image: url(Rome.jpeg);
+}
+
+.img-product5 {
+  
+  background-image: url(Romania.jpeg);
+}
+
+.img-product6 {
+ 
+  background-image: url(paris.jpeg);
+}
+
+.img-product7 {
+  
+  background-image: url(barcellona.jpeg);
+}
+
+.img-product8 {
+  
+  background-image: url(Hawaii.jpeg);
+}
+
+.card-txt {
+  margin: 20px 30px 20px 30px;
+  font-size: 2rem;
+
+  color: rgb(0, 0, 0);
+}
+
+button {
+  border: none;
+  background-color: #8607fe;
+  color: #fff;
+  height: 10vh;
+}
+
+@media screen and (max-width: 1200px) {
+  .product {
+    text-align: center;
+    margin: 5vh auto 5vh auto;
+  }
+  button {
+    display: none;
+  }
+  .container-product {
+    flex-direction: column;
+  }
+  .card-p {
+    width: 90vw;
+  }
+  nav ul li {
+    display: none;
+  }
+}
+
+p {
+  color: black;
+}
+
+@media screen and (max-width: 500px) {
+  #title-h1 {
+    font-size: 2rem;
+  }
+}
+
+#box-indonesia {
+  box-sizing: border-box;
+  display: none;
+  border: 3px solid aquamarine;
+  padding: 10rem 10rem 10rem 10rem;
+  transform: translateY(45deg);
+}
+
+.airplaneBackground {
+  background-image: url(torre.webp);
+
+  height: 80vh;
+  width: 100%;
+}
+
+#imgIndo {
+  animation-name: airplane;
+  animation-duration: 6s;
+  position: relative;
+  left: 40%;
+  width: 30%;
+  top: 45%;
+  transform: rotate(4deg);
+  transform: perspective(45deg);
+}
+
+@keyframes airplane {
+  0% {
+    position: relative;
+    top: 7rem;
+    margin-left: -35%;
+  }
+  5% {
+    position: relative;
+    top: 5rem;
+    margin-left: -30%;
+  }
+
+  10% {
+    position: relative;
+    top: 5rem;
+    left: -0%;
+  }
+
+  15% {
+    position: relative;
+    top: 5rem;
+    left: -0%;
+  }
+  20% {
+    position: relative;
+    top: 5rem;
+    left: -0%;
+  }
+  25% {
+    position: relative;
+    top: 5rem;
+    left: -0%;
+  }
+
+  30% {
+    position: relative;
+    left: -0%;
+
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    position: relative;
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  #imgIndo {
+    position: relative;
+    left: 40%;
+    width: 30%;
+    top: 60%;
+    animation: mediaAir 5s;
+  }
+  @keyframes mediaAir {
+    0% {
+      margin-left: -70%;
+      top: 50%;
+    }
+  }
+}
+
+#helicopter {
+  width: 5%;
+  transform: rotate(-5deg);
+  position: absolute;
+  top: 5rem;
+  left: -5%;
+  animation: helicopter 20s infinite;
+}
+
+@keyframes helicopter {
+  0% {
+    position: absolute;
+    left: 100%;
+  }
+}
+
+#trees {
+  width: 8%;
+  animation-name: trees;
+  animation-duration: 120s;
+  position: absolute;
+  left: 0%;
+  animation-iteration-count: infinite;
+}
+
+@keyframes trees {
+  0% {
+    position: absolute;
+    left: 100%;
+  }
+}
+
+#trees2 {
+  width: 8%;
+  animation-name: trees2;
+  animation-duration: 120s;
+  position: absolute;
+  left: 100%;
+  top: 15%;
+  animation-iteration-count: infinite;
+}
+
+@keyframes trees2 {
+  0% {
+    position: absolute;
+    left: 0%;
+  }
+}
+
+#comeWithUs {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: 0px 5px 1px rgb(51, 155, 230);
+  font-size: 5rem;
+  animation: pubb 2s;
+  cursor: pointer;
+}
+
+@keyframes pubb {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    color: black;
+  }
+  90% {
+    color: brown;
+  }
+}
+
+.imgRight {
+  background-image: url(second_back.jpeg);
+  animation: right 3s;
+  border-radius: 20%;
+  height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  margin-bottom: 8%;
+}
+
+@keyframes right {
+  0% {
+    opacity: 0;
+    transform: translateX(90%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+#search {
+  animation-name: search;
+  animation-duration: 4s;
+}
+
+@keyframes search {
+  0% {
+    opacity: 0;
+  }
+}
+
+.contacts-2 {
+  background-color: #17eb3aac;
+  padding: "15rem";
+  animation: contacs 4s;
+
+}
+
+@keyframes contacs {
+  0%{
+    opacity: 0;
+    transform: translateX(70%);
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 50vh;
+}
+
+.wrapper .icon {
+  position: relative;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.wrapper .icon i {
+  color: #fff;
+  transition: 0.4s linear;
+}
+
+.wrapper .icon::before,
+.wrapper .icon1::after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: 0.4s linear;
+}
+
+.wrapper .icon:hover::before {
+  border-radius: 50%;
+  border-left: 4px solid;
+  border-right: 4px solid;
+  transform: skewX(20deg);
+  color: rgb(0, 0, 0);
+}
+
+.wrapper .icon:hover::after {
+  border-radius: 50%;
+  border-left: 4px solid;
+  border-right: 4px solid;
+  transform: skewY(20deg);
+  color: rgb(0, 0, 0);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  color: #000000;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0, 265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.imgSolider{
+  animation: solider;
+  animation-duration: 5s;
+}
+
+@keyframes solider {
+  0%{
+    width: 0rem;
+  }
+  
+}
+
+.imgSolider-2{
+  width: 5rem;
+  animation: solider-2;
+  animation-duration: 5s;
+}
+
+@keyframes solider-2 {
+  0%{
+    width: 0rem;
+  }
+  
+}
+.card-indonesia{
+  width: 5rem;
+}
+
+.card-indonesia, .img-indonesia-{
+ width: 200px; height:200px; overflow: auto;
+  display: none;
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+}
+.img-indonesia-{
+  width: 12rem;
+  margin-left: 0rem;
+}
